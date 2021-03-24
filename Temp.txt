@@ -8,4 +8,6 @@ test-santosh
 test-conflict
 
 test- new line
+<<<<<<< HEAD
 text-second line
+
