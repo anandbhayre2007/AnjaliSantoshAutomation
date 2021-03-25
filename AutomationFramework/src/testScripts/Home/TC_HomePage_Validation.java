@@ -60,7 +60,7 @@ public class TC_HomePage_Validation extends Driver{
 	public void testAutombileLink()
 	{
 		//step 1. : Verify Automobile link is present on HomePage
-		Assert.assertTrue(!homePage.isAutomobilePresent(),"Automobile link is not present on Home Page");
+		Assert.assertTrue(homePage.isAutomobilePresent(),"Automobile link is not present on Home Page");
 		
 		//Step 2: Verify that Automobile link is working
 		homePage.clickAutomobile();
