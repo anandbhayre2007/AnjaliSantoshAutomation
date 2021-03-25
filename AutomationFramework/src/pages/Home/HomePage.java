@@ -11,17 +11,19 @@ public class HomePage {
 	
 	ApplicationLibrary lib= new ApplicationLibrary();
 	
+	//Constructor
 	public HomePage(WebDriver dr)
 	{
 		this.dr=dr;
 	}
 	
 	//WebElements
-	By automobile=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_automobile']");
+	By automobile=By.id("nav_automobile");
 	By truck=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_truck']");
 	By motorCycle=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_motorcycle']");
 	By camper=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_camper']");
 	
+	//Actions
 	public boolean isAutomobilePresent()
 	{
 		if(lib.isElementPresent(dr, automobile))
