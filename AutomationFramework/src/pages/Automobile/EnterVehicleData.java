@@ -27,22 +27,13 @@ public class EnterVehicleData {
 	//Visibility
 	public boolean isEnginePerformancePresent()
 	{
-		if(lib.isElementPresent(dr, enginePerformance))
-		{
-			return true;
-		}else {
-			return false;
-		}
+		return lib.isElementPresent(dr, enginePerformance);
+		
 	}
 	
 	public boolean isMakePresent()
 	{
-		if(lib.isElementPresent(dr, make))
-		{
-			return true;
-		}else {
-			return false;
-		}
+		return lib.isElementPresent(dr, make);
 	}
 	
 	//Actions
