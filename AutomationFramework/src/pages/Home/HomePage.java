@@ -11,7 +11,10 @@ public class HomePage {
 	
 	ApplicationLibrary lib= new ApplicationLibrary();
 	
+
+
 	//Constructor
+
 	public HomePage(WebDriver dr)
 	{
 		this.dr=dr;
@@ -23,7 +26,11 @@ public class HomePage {
 	By motorCycle=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_motorcycle']");
 	By camper=By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_camper']");
 	
+
+
+
 	//Actions
+
 	public boolean isAutomobilePresent()
 	{
 		if(lib.isElementPresent(dr, automobile))
@@ -64,7 +71,7 @@ public class HomePage {
 		}
 	}
 	
-	
+//	Operations
 	public void clickAutomobile()
 	{	
 		dr.findElement(automobile).click();

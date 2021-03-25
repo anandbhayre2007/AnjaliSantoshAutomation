@@ -10,6 +10,7 @@ public class EnterVehicleData {
 	WebDriver dr;
 	ApplicationLibrary lib= new ApplicationLibrary();
 	
+//	Constructor
 	public EnterVehicleData(WebDriver dr)
 	{
 		this.dr=dr;
