@@ -169,6 +169,7 @@ public class EnterInsurantData {
 		
 	}
 	
+//	Actions
 	public void enterFirstName(String data)
 	{	
 		dr.findElement(firstname).sendKeys(""+data);
