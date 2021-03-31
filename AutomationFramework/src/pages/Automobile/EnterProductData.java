@@ -2,6 +2,7 @@ package pages.Automobile;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import functionLibrary.ApplicationLibrary;
 
@@ -72,5 +73,50 @@ public class EnterProductData {
 	{
 		return lib.isElementPresent(dr, courtesycar);
 		
+		
+		
 	}
+    public void enterStartDate(String data)
+	{	
+		dr.findElement(startdate).sendKeys(""+data);
+	}
+    
+    public void enterInsuranceSum(int data1)
+	{
+		//WebElement make1 = dr.findElement(By.id("make"));
+		Select sel = new Select(dr.findElement(insurancesum));
+		sel.selectByIndex(data1);	
+	}
+    
+    public void enterMeritRating(int data5)
+ 	{
+ 		//WebElement make1 = dr.findElement(By.id("make"));
+ 		Select sel = new Select(dr.findElement(meritrating));
+ 		sel.selectByIndex(data5);	
+ 	}
+    
+    public void enterDamageInsurance(int data2)
+   	{
+   		//WebElement make1 = dr.findElement(By.id("make"));
+   		Select sel = new Select(dr.findElement(damageinsurance));
+   		sel.selectByIndex(data2);	
+   	}
+    
+    public void clickEuroProtection()
+	{	
+		dr.findElement(EuroProtection).click();
+	}
+	
+    public void enterCourtesyCar(int data6)
+ 	{
+ 		//WebElement make1 = dr.findElement(By.id("make"));
+ 		Select sel = new Select(dr.findElement(courtesycar));
+ 		sel.selectByIndex(data6);	
+ 	}
+    
+    public void clickNextSelectPriceOption()
+	{	
+		dr.findElement(nextselectpriceoption).click();
+	}
+	
 }
