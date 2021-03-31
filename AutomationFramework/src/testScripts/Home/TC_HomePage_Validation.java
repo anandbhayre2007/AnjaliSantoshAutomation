@@ -112,7 +112,7 @@ public class TC_HomePage_Validation extends Driver{
 		
 		//Step 3: Verify that Enter Vehicle Data Page is displayed
 		Assert.assertTrue(automobileEnterVehicleData.isMakePresent(),"Enter Vehicle data page is not displayed");
-				
+		
 		
 	}
 	
