@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test - chrome(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testScripts.Home.TC_HomePage_Validation">
+      <class name="testScripts.Home.TC_Automobile_Validation">
         <methods>
+          <include name="oneTimeSetUp"/>
+          <include name="navigate"/>
           <include name="afterMethod"/>
           <include name="setUp"/>
-          <include name="oneTimeSetUp"/>
-          <include name="tearDown"/>
-          <include name="testAutombileLink"/>
-          <include name="navigate"/>
+          <include name="testTruckPage"/>
           <include name="oneTimeTearDown"/>
         </methods>
-      </class> <!-- testScripts.Home.TC_HomePage_Validation -->
+      </class> <!-- testScripts.Home.TC_Automobile_Validation -->
     </classes>
-  </test> <!-- Test - chrome(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

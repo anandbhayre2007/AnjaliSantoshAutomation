@@ -20,7 +20,7 @@ WebDriver dr;
 		By cylindercapacity = By.id("cylindercapacity");
 		By enginePerformance=By.id("engineperformance");
 		By dateofmanufacture = By.id("dateofmanufacture");
-		By numberofseats = By.id("numberofseats");
+		By numberofseats = By.id("numberofseatsmotorcycle");
 		By listprice = By.id("listprice");
 		By annualmileage = By.id("annualmileage");
 		By nextenterinsurantdata = By.id("nextenterinsurantdata");
