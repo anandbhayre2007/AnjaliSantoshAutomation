@@ -1,5 +1,7 @@
 package pages.Automobile;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -19,8 +21,11 @@ public class SelectPriceOption {
 	By selectsilver=By.id("selectsilver");
 	By selectgold=By.id("selectgold");
 	By selectplatinum = By.id("selectplatinum");
-	By selectultimate = By.id("selectultimate");
-	By nextsendquote = By.id("nextsendquote");
+	By selectultimate = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[4]/section[1]/div[1]/table[1]/tfoot/tr/th[2]/label[4]/span[1]");
+	By nextsendquote = By.xpath("//button[@id='nextsendquote']");
+	
+	
+//	Visibility
 	
 	public boolean isselectsilver()
 	{
@@ -45,6 +50,18 @@ public class SelectPriceOption {
 	public boolean isnextsendquote()
 	{
 		return lib.isElementPresent(dr,nextsendquote);
+	}
+	
+//	Actions
+	public void clickSelectUltimate()
+	{
+		dr.findElement(selectultimate).click();
+	}
+	
+	public void clickNextSendQuote()
+	{
+		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		dr.findElement(nextsendquote).click();
 	}
 	
 	

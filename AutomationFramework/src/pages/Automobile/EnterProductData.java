@@ -21,10 +21,10 @@ public class EnterProductData {
 	By insuranceSum=By.xpath("//select[@id='insurancesum']");
 	By meritRating = By.id("meritrating");
 	By damageInsurance = By.id("damageinsurance");
-	By optionalProducts = By.xpath("//label[text()='Optional Products']");
+	By optionalProducts = By.xpath("//label[text()= 'Optional Products']");
 	By courtesyCar = By.id("courtesycar");
 	By prevButton = By.xpath("//button[@name='Prev (Enter Vehicle Data)']");
-	By nextButton = By.xpath("//button[@id='nextenterproductdata']");
+	By nextButton = By.xpath("//button[@id='nextselectpriceoption']");
 	
 	//Visibility
 	public boolean isStartDatePresent()
@@ -53,7 +53,7 @@ public class EnterProductData {
 		return lib.isElementPresent(dr,optionalProducts);
 	}
 	
-	public boolean isCourtesyCarPresernt()
+	public boolean isCourtesyCarPresent()
 	{
 		return lib.isElementPresent(dr,courtesyCar);
 	}
@@ -95,7 +95,7 @@ public class EnterProductData {
 	
 	public void enterOptionalProducts()
 	{
-		dr.findElement(By.xpath("//input[@id='EuroProtection']")).click();
+		dr.findElement(By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]")).click();
 	}
 	
 	public void enterCourtesyCar(int data)

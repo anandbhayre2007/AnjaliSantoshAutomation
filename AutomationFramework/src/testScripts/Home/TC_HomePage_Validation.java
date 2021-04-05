@@ -20,6 +20,7 @@ public class TC_HomePage_Validation extends Driver{
 	
 	HomePage homePage;
 	pages.Automobile.EnterVehicleData automobileEnterVehicleData;
+	pages.Automobile.EnterInsurantData automobileEnterInsurantData;
 	pages.Truck.EnterVehicleData truckEnterVehicleData;
 	pages.Motorcycle.EnterVehicleData motorcycleEnterVehicleData;
 	pages.Camper.EnterVehicleData camperEnterVehicleData;

@@ -25,14 +25,14 @@ public class EnterInsurantData {
 	By firstname=By.id("firstname");
 	By lastname=By.id("lastname");
 	By birthdate = By.id("birthdate");
-	By gendermale = By.id("gendermale");
+	By gendermale = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[2]/div[4]/p[1]/label[1]/span[1]");
 	By genderfemale = By.id("genderfemale");
 	By streetaddress = By.id("streetaddress");
 	By country = By.id("country");
 	By zipcode = By.id("zipcode");
 	By city = By.id("city");
 	By occupation = By.id("occupation");
-	By speeding = By.id("speeding");
+	By speeding = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[2]/div[10]/p[1]/label[1]/span[1]");
 	By bungeejumping = By.id("bungeejumping");
 	By cliffdiving = By.id("cliffdiving");
 	By skydiving = By.id("skydiving");
@@ -169,6 +169,7 @@ public class EnterInsurantData {
 		
 	}
 	
+//	Actions
 	public void enterFirstName(String data)
 	{	
 		dr.findElement(firstname).sendKeys(""+data);
@@ -249,7 +250,7 @@ public class EnterInsurantData {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 	
-	public void clickExtEnterProductData(String data8)
+	public void clickExtEnterProductData()
 	{	
 		dr.findElement(nextenterproductdata).click();
 	}
