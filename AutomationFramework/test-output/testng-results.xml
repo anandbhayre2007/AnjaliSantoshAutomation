@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="185194" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:15:29 IST">
     <groups>
     </groups>
@@ -12,6 +13,18 @@
           </reporter-output>
         </test-method> <!-- oneTimeSetUp -->
         <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="setUp" is-config="true" duration-ms="2375" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:12:26 IST">
+=======
+  <suite name="Suite" duration-ms="274406" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:28:13 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="274406" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:28:13 IST">
+      <class name="testScripts.Home.TC_Automobile_Validation">
+        <test-method status="PASS" signature="oneTimeSetUp()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="oneTimeSetUp" is-config="true" duration-ms="577" started-at="2021-04-03T15:23:38 IST" finished-at="2021-04-03T15:23:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneTimeSetUp -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="setUp" is-config="true" duration-ms="21010" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:24:00 IST">
+>>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
           <params>
             <param index="0">
               <value>
@@ -22,6 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="navigate()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="navigate" is-config="true" duration-ms="4934" started-at="2021-04-03T02:12:26 IST" finished-at="2021-04-03T02:12:31 IST">
           <reporter-output>
           </reporter-output>
@@ -35,17 +49,40 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=testAutombilePage status=SUCCESS method=TC_AutomobilePage_Validation.testAutombilePage()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a] output={null}]]]>
+=======
+        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="navigate" is-config="true" duration-ms="8546" started-at="2021-04-03T15:24:00 IST" finished-at="2021-04-03T15:24:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="testTruckPage()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="testTruckPage" duration-ms="244797" started-at="2021-04-03T15:24:08 IST" finished-at="2021-04-03T15:28:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="afterMethod" is-config="true" duration-ms="3" started-at="2021-04-03T15:28:13 IST" finished-at="2021-04-03T15:28:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTruckPage status=SUCCESS method=TC_Automobile_Validation.testTruckPage()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5] output={null}]]]>
+>>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="oneTimeTearDown()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="oneTimeTearDown" is-config="true" duration-ms="1" started-at="2021-04-03T02:15:29 IST" finished-at="2021-04-03T02:15:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneTimeTearDown -->
       </class> <!-- testing.TC_AutomobilePage_Validation -->
+=======
+        <test-method status="PASS" signature="oneTimeTearDown()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="oneTimeTearDown" is-config="true" duration-ms="0" started-at="2021-04-03T15:28:13 IST" finished-at="2021-04-03T15:28:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneTimeTearDown -->
+      </class> <!-- testScripts.Home.TC_Automobile_Validation -->
+>>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

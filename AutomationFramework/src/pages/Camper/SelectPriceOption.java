@@ -44,10 +44,10 @@ public class SelectPriceOption {
 		return lib.isElementPresent(dr,selectultimate);
 	}
 	
-//	public boolean isnextsendquote()
-//	{
-//		return lib.isElementPresent(dr,nextsendquote);
-//	}
+	public boolean isnextsendquote()
+	{
+		return lib.isElementPresent(dr,nextsendquote);
+	}
 	
 	public void clickSelectUltimate()
 	{

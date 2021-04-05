@@ -19,7 +19,7 @@ public class EnterVehicleData {
 		By enginePerformance=By.id("engineperformance");
 		By dateofmanufacture = By.id("dateofmanufacture");
 		By numberofseats = By.id("numberofseats");
-		By righthanddriveyes = By.id("righthanddriveyes");
+		By righthanddriveyes = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[1]/div[5]/p[1]/label[1]/span[1]");
 		By righthanddriveno = By.id("righthanddriveno");
 		By fuel = By.id("fuel");
 		By payload = By.id("payload");
@@ -112,7 +112,7 @@ public class EnterVehicleData {
 			dr.findElement(dateofmanufacture).sendKeys(""+data2);
 		}
 		
-		public void clickrighthanddriveyes(String data2 )
+		public void clickrighthanddriveyes()
 		{
 			dr.findElement(righthanddriveyes).click();
 		}

@@ -17,7 +17,7 @@ public class SendQuote {
 	
 	//WebElements
 	By email=By.id("email");
-	By phone=By.id("Phone");
+	By phone=By.id("phone");
 	By username = By.id("username");
 	By password = By.id("password");
 	By confirmpassword = By.id("confirmpassword");

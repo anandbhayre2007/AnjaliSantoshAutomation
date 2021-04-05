@@ -25,14 +25,14 @@ public class EnterInsurantData {
 	By firstname=By.id("firstname");
 	By lastname=By.id("lastname");
 	By birthdate = By.id("birthdate");
-	By gendermale = By.id("gendermale");
+	By gendermale = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[2]/div[4]/p[1]/label[1]/span[1]");;
 	By genderfemale = By.id("genderfemale");
 	By streetaddress = By.id("streetaddress");
 	By country = By.id("country");
 	By zipcode = By.id("zipcode");
 	By city = By.id("city");
 	By occupation = By.id("occupation");
-	By speeding = By.id("speeding");
+	By speeding = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[2]/div[10]/p[1]/label[1]/span[1]");
 	By bungeejumping = By.id("bungeejumping");
 	By cliffdiving = By.id("cliffdiving");
 	By skydiving = By.id("skydiving");
@@ -168,6 +168,33 @@ public class EnterInsurantData {
 		return lib.isElementPresent(dr, nextenterproductdata);
 		
 	}
+	
+	public void enterFirstName(String data)
+	{	
+		dr.findElement(firstname).sendKeys(""+data);
+	}
+	
+	public void enterLastName(String data1)
+	{	
+		dr.findElement(lastname).sendKeys(""+data1);
+	}
+	
+	public void enterBirthDate(String data2)
+	{	
+		dr.findElement(birthdate).sendKeys(""+data2);
+	}
+	
+	public void clickGender()
+	{	
+		dr.findElement(gendermale).click();
+	}
+	
+	public void enterstreetaddress(String data3)
+	{	
+		dr.findElement(streetaddress).sendKeys(""+data3);
+	}
+	
+
 
 //	Actions
 	public void enterFirstName(String data)
@@ -195,7 +222,6 @@ public class EnterInsurantData {
 		dr.findElement(streetaddress).sendKeys(""+data3);
 	}
 	
-
 	public void enterCountry(int data4)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
@@ -255,4 +281,9 @@ public class EnterInsurantData {
 		dr.findElement(nextenterproductdata).click();
 	}
 
+
 }
+
+	
+}
+

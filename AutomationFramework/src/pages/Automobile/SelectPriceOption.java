@@ -26,6 +26,11 @@ public class SelectPriceOption {
 	
 	
 //	Visibility
+	By selectsilver=By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][1]/span");
+	By selectgold=By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][2]/span");
+	By selectplatinum = By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][3]/span");
+	By selectultimate = By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][4]/span");
+	By nextsendquote = By.xpath("//div[@class='field buttons margin-top-20']//button[@id='nextsendquote']");
 	
 	public boolean isselectsilver()
 	{
@@ -52,7 +57,9 @@ public class SelectPriceOption {
 		return lib.isElementPresent(dr,nextsendquote);
 	}
 	
+
 //	Actions
+
 	public void clickSelectUltimate()
 	{
 		dr.findElement(selectultimate).click();

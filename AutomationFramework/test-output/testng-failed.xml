@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+<<<<<<< HEAD
       <class name="testing.TC_AutomobilePage_Validation">
         <methods>
           <include name="afterMethod"/>
@@ -14,6 +15,18 @@
           <include name="oneTimeTearDown"/>
         </methods>
       </class> <!-- testing.TC_AutomobilePage_Validation -->
+=======
+      <class name="testScripts.Home.TC_Automobile_Validation">
+        <methods>
+          <include name="oneTimeSetUp"/>
+          <include name="navigate"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testTruckPage"/>
+          <include name="oneTimeTearDown"/>
+        </methods>
+      </class> <!-- testScripts.Home.TC_Automobile_Validation -->
+>>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

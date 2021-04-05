@@ -20,7 +20,7 @@ public class EnterProductData {
 	By startdate=By.id("startdate");
 	By insurancesum=By.id("insurancesum");
 	By damageinsurance = By.id("damageinsurance");
-	By EuroProtection = By.id("EuroProtection");
+	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[4]/p[1]/label[1]/span[1]");
 	By LegalDefenseInsurance = By.id("LegalDefenseInsurance");
     By nextselectpriceoption = By.id("nextselectpriceoption");
     public boolean isStartDatePresent()

@@ -30,6 +30,19 @@ public class EnterProductData {
 	public boolean isStartDatePresent()
 	{
 		return lib.isElementPresent(dr, startDate);
+
+	By startdate=By.id("startdate");
+	By insurancesum=By.id("insurancesum");
+	By meritrating = By.id("meritrating");
+	By damageinsurance = By.id("damageinsurance");
+	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]");
+	By LegalDefenseInsurance = By.id("LegalDefenseInsurance");
+    By courtesycar =By.id("courtesycar");
+    By nextselectpriceoption = By.id("nextselectpriceoption");
+    public boolean isStartDatePresent()
+	{
+		return lib.isElementPresent(dr, startdate);
+
 		
 	}
 	

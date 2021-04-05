@@ -29,7 +29,7 @@ public class CaptureScreenshot {
 		  
 		  String name=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		  FileHandler.copy(src, new File(
-		  "D:\\AutomationBatch1\\AutomationBatch1\\AutomationFramework\\Screenshots\\testing_"+name+".png"
+		  "E:\\Automation\\GitRepo\\AutomationFramework\\Screenshots\\testing_"+name+".png"
 		  ));
 		 
 	
