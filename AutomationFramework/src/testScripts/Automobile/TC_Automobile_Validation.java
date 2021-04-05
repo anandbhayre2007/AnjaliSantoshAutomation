@@ -270,7 +270,7 @@ public class TC_Automobile_Validation extends Driver {
 		Thread.sleep(5000);
 
 		// Step 51: Verify that merit rating is displayed
-		Assert.assertTrue(automobileEnterProductData.isMeritRatingPresent(), "merit rating field is not displayed");
+		Assert.assertTrue(automobileEnterProductData.isMeritRating(), "merit rating field is not displayed");
 		// Step 52: Verify that Insurance Sum is displayed
 		automobileEnterProductData.enterMeritRating(2);
 		;
@@ -300,9 +300,9 @@ public class TC_Automobile_Validation extends Driver {
 		Thread.sleep(5000);
 
 		// Step 59: Verify that Next Button is displayed
-		Assert.assertTrue(automobileEnterProductData.isNextButtonPresent(), " Next Button is not displayed");
+		Assert.assertTrue(automobileEnterProductData.isnextselectpriceoptionPresent(), " Next Button is not displayed");
 		// Step 60: Verify that Next Button is clicked
-		automobileEnterProductData.enterNextSelectPriceOption();
+		automobileEnterProductData.clickNextSelectPriceOption();
 
 		Thread.sleep(5000);
 
