@@ -23,8 +23,6 @@ public class SendQuote {
 	By confirmpassword = By.id("confirmpassword");
     By comments = By.id("Comments");
     By sendemail = By.id("sendemail");
-    By okbutton = By.xpath("//body//div[@class='sweet-alert showSweetAlert visible']/div[7]/div[1]/button");
-    By successtext = By.xpath("//h2[text()='Sending e-mail success!']");
     
     public boolean isemail()
 	{
@@ -62,19 +60,6 @@ public class SendQuote {
     }
     
     public void entereMail(String data23)
-
-    public boolean isSuccessTextPresent()
-    {
-    	return lib.isElementPresent(dr, successtext);
-    }
-    
-    public boolean isokbutton()
-    {
-    	return lib.isElementPresent(dr, okbutton);
-    }
-    
-//    Actions
-    public void entereMail(String data)
 	{	
 		dr.findElement(email).sendKeys(""+data23);
 	}
@@ -109,10 +94,7 @@ public class SendQuote {
 		dr.findElement(sendemail).click();
 	}
     
-    public void clickOkButton()
-	{	
-		dr.findElement(okbutton).click();
-	}
+
     
     
     

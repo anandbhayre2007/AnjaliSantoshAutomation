@@ -18,14 +18,12 @@ public class SelectPriceOption {
 	}
 	
 	//WebElements
-	By selectsilver=By.id("selectsilver");
-	By selectgold=By.id("selectgold");
-	By selectplatinum = By.id("selectplatinum");
-	By selectultimate = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[4]/section[1]/div[1]/table[1]/tfoot/tr/th[2]/label[4]/span[1]");
-	By nextsendquote = By.xpath("//button[@id='nextsendquote']");
+	By selectsilver=By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][1]/span");
+	By selectgold=By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][2]/span");
+	By selectplatinum = By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][3]/span");
+	By selectultimate = By.xpath("//label[@class='choosePrice ideal-radiocheck-label'][4]/span");
+	By nextsendquote = By.xpath("//div[@class='field buttons margin-top-20']//button[@id='nextsendquote']");
 	
-	
-//	Visibility
 	public boolean isselectsilver()
 	{
 		return lib.isElementPresent(dr,selectsilver);
@@ -51,9 +49,6 @@ public class SelectPriceOption {
 		return lib.isElementPresent(dr,nextsendquote);
 	}
 	
-
-//	Actions
-
 	public void clickSelectUltimate()
 	{
 		dr.findElement(selectultimate).click();
