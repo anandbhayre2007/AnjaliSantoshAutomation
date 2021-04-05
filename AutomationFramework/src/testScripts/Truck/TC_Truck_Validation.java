@@ -20,6 +20,7 @@ import org.testng.annotations.Test;
 
 import configuration.Configuration;
 import driver.Driver;
+import functionLibrary.ApplicationLibrary;
 import pages.Automobile.EnterVehicleData;
 import pages.Home.HomePage;
 
@@ -41,6 +42,7 @@ WebDriver dr;
 	@Parameters("browser")
 	public void setUp(String browser)
 	{
+		lib=new ApplicationLibrary();
 		this.dr=lib.launchBrowser(browser);
 		homePage=new HomePage(dr);
 		truckEnterVehicleData= new pages.Truck.EnterVehicleData(dr);

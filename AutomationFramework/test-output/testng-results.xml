@@ -1,30 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="4" failed="0" ignored="8" total="16" passed="4">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Suite" duration-ms="185194" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:15:29 IST">
+  <suite name="Suite" duration-ms="185599" started-at="2021-04-05T22:11:15 IST" finished-at="2021-04-05T22:14:20 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="185194" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:15:29 IST">
-      <class name="testing.TC_AutomobilePage_Validation">
-        <test-method status="PASS" signature="oneTimeSetUp()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="oneTimeSetUp" is-config="true" duration-ms="297" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:12:24 IST">
+    <test name="Test - Home" duration-ms="185599" started-at="2021-04-05T22:11:15 IST" finished-at="2021-04-05T22:14:20 IST">
+      <class name="testScripts.Camper.TC_Camper_Validation">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Camper.TC_Camper_Validation@5aa9e4eb]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Camper.TC_Camper_Validation.setUp(TC_Camper_Validation.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="navigate()[pri:0, instance:testScripts.Camper.TC_Camper_Validation@5aa9e4eb]" name="navigate" is-config="true" duration-ms="-1617641060611" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="SKIP" signature="testTruckPage()[pri:0, instance:testScripts.Camper.TC_Camper_Validation@5aa9e4eb]" name="testTruckPage" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Camper.TC_Camper_Validation.setUp(TC_Camper_Validation.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckPage -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Camper.TC_Camper_Validation@5aa9e4eb]" name="afterMethod" is-config="true" duration-ms="-1617641060620" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testScripts.Camper.TC_Camper_Validation -->
+      <class name="testScripts.Motorcycle.TC_MotorCycle_Validation">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Motorcycle.TC_MotorCycle_Validation@6989da5e]" name="setUp" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Motorcycle.TC_MotorCycle_Validation.setUp(TC_MotorCycle_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="navigate()[pri:0, instance:testScripts.Motorcycle.TC_MotorCycle_Validation@6989da5e]" name="navigate" is-config="true" duration-ms="-1617641060627" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="SKIP" signature="testTruckPage()[pri:0, instance:testScripts.Motorcycle.TC_MotorCycle_Validation@6989da5e]" name="testTruckPage" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Motorcycle.TC_MotorCycle_Validation.setUp(TC_MotorCycle_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckPage -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Motorcycle.TC_MotorCycle_Validation@6989da5e]" name="afterMethod" is-config="true" duration-ms="-1617641060635" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testScripts.Motorcycle.TC_MotorCycle_Validation -->
+      <class name="testScripts.Truck.TC_Truck_Validation">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Truck.TC_Truck_Validation@385c9627]" name="setUp" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Truck.TC_Truck_Validation.setUp(TC_Truck_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="navigate()[pri:0, instance:testScripts.Truck.TC_Truck_Validation@385c9627]" name="navigate" is-config="true" duration-ms="-1617641060642" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="SKIP" signature="testTruckPage()[pri:0, instance:testScripts.Truck.TC_Truck_Validation@385c9627]" name="testTruckPage" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Truck.TC_Truck_Validation.setUp(TC_Truck_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckPage -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Truck.TC_Truck_Validation@385c9627]" name="afterMethod" is-config="true" duration-ms="-1617641060667" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testScripts.Truck.TC_Truck_Validation -->
+      <class name="testScripts.Home.TC_HomePage_Validation">
+        <test-method status="PASS" signature="oneTimeSetUp()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="oneTimeSetUp" is-config="true" duration-ms="681" started-at="2021-04-05T22:11:14 IST" finished-at="2021-04-05T22:11:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneTimeSetUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="setUp" is-config="true" duration-ms="2375" started-at="2021-04-03T02:12:24 IST" finished-at="2021-04-03T02:12:26 IST">
-=======
-  <suite name="Suite" duration-ms="274406" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:28:13 IST">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="274406" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:28:13 IST">
-      <class name="testScripts.Home.TC_Automobile_Validation">
-        <test-method status="PASS" signature="oneTimeSetUp()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="oneTimeSetUp" is-config="true" duration-ms="577" started-at="2021-04-03T15:23:38 IST" finished-at="2021-04-03T15:23:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oneTimeSetUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="setUp" is-config="true" duration-ms="21010" started-at="2021-04-03T15:23:39 IST" finished-at="2021-04-03T15:24:00 IST">
->>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="setUp" is-config="true" duration-ms="158821" started-at="2021-04-05T22:11:15 IST" finished-at="2021-04-05T22:13:53 IST">
           <params>
             <param index="0">
               <value>
@@ -35,54 +265,172 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="navigate()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="navigate" is-config="true" duration-ms="4934" started-at="2021-04-03T02:12:26 IST" finished-at="2021-04-03T02:12:31 IST">
+        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="navigate" is-config="true" duration-ms="6920" started-at="2021-04-05T22:14:06 IST" finished-at="2021-04-05T22:14:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="testAutombilePage()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="testAutombilePage" duration-ms="177864" started-at="2021-04-03T02:12:31 IST" finished-at="2021-04-03T02:15:29 IST">
+        <test-method status="PASS" signature="testAutombileLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="testAutombileLink" duration-ms="3371" started-at="2021-04-05T22:14:13 IST" finished-at="2021-04-05T22:14:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutombilePage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-03T02:15:29 IST" finished-at="2021-04-03T02:15:29 IST">
+        </test-method> <!-- testAutombileLink -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:16 IST" finished-at="2021-04-05T22:14:16 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAutombilePage status=SUCCESS method=TC_AutomobilePage_Validation.testAutombilePage()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a] output={null}]]]>
-=======
-        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="navigate" is-config="true" duration-ms="8546" started-at="2021-04-03T15:24:00 IST" finished-at="2021-04-03T15:24:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="testTruckPage()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="testTruckPage" duration-ms="244797" started-at="2021-04-03T15:24:08 IST" finished-at="2021-04-03T15:28:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTruckPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="afterMethod" is-config="true" duration-ms="3" started-at="2021-04-03T15:28:13 IST" finished-at="2021-04-03T15:28:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testTruckPage status=SUCCESS method=TC_Automobile_Validation.testTruckPage()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5] output={null}]]]>
->>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
+                <![CDATA[[TestResult name=testAutombileLink status=SUCCESS method=TC_HomePage_Validation.testAutombileLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="oneTimeTearDown()[pri:0, instance:testing.TC_AutomobilePage_Validation@57855c9a]" name="oneTimeTearDown" is-config="true" duration-ms="1" started-at="2021-04-03T02:15:29 IST" finished-at="2021-04-03T02:15:29 IST">
+        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="navigate" is-config="true" duration-ms="253" started-at="2021-04-05T22:14:16 IST" finished-at="2021-04-05T22:14:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="testCamperLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="testCamperLink" duration-ms="741" started-at="2021-04-05T22:14:16 IST" finished-at="2021-04-05T22:14:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCamperLink -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:17 IST" finished-at="2021-04-05T22:14:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCamperLink status=SUCCESS method=TC_HomePage_Validation.testCamperLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="navigate" is-config="true" duration-ms="311" started-at="2021-04-05T22:14:17 IST" finished-at="2021-04-05T22:14:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="testMotorCycleLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="testMotorCycleLink" duration-ms="691" started-at="2021-04-05T22:14:17 IST" finished-at="2021-04-05T22:14:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMotorCycleLink -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:18 IST" finished-at="2021-04-05T22:14:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMotorCycleLink status=SUCCESS method=TC_HomePage_Validation.testMotorCycleLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="navigate()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="navigate" is-config="true" duration-ms="246" started-at="2021-04-05T22:14:18 IST" finished-at="2021-04-05T22:14:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="testTruckLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="testTruckLink" duration-ms="1515" started-at="2021-04-05T22:14:18 IST" finished-at="2021-04-05T22:14:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckLink -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTruckLink status=SUCCESS method=TC_HomePage_Validation.testTruckLink()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="tearDown" is-config="true" duration-ms="165" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="oneTimeTearDown()[pri:0, instance:testScripts.Home.TC_HomePage_Validation@10683d9d]" name="oneTimeTearDown" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneTimeTearDown -->
-      </class> <!-- testing.TC_AutomobilePage_Validation -->
-=======
-        <test-method status="PASS" signature="oneTimeTearDown()[pri:0, instance:testScripts.Home.TC_Automobile_Validation@cd2dae5]" name="oneTimeTearDown" is-config="true" duration-ms="0" started-at="2021-04-03T15:28:13 IST" finished-at="2021-04-03T15:28:13 IST">
+      </class> <!-- testScripts.Home.TC_HomePage_Validation -->
+      <class name="testScripts.Automobile.TC_Automobile_Validation">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Automobile.TC_Automobile_Validation@3fc2959f]" name="setUp" is-config="true" duration-ms="1" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Automobile.TC_Automobile_Validation.setUp(TC_Automobile_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oneTimeTearDown -->
-      </class> <!-- testScripts.Home.TC_Automobile_Validation -->
->>>>>>> 23d6907f8db21cd263c4a8b4e48d0b90a7da8d6b
-    </test> <!-- Test -->
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="navigate()[pri:0, instance:testScripts.Automobile.TC_Automobile_Validation@3fc2959f]" name="navigate" is-config="true" duration-ms="-1617641060591" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="SKIP" signature="testTruckPage()[pri:0, instance:testScripts.Automobile.TC_Automobile_Validation@3fc2959f]" name="testTruckPage" duration-ms="0" started-at="2021-04-05T22:14:20 IST" finished-at="2021-04-05T22:14:20 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at testScripts.Automobile.TC_Automobile_Validation.setUp(TC_Automobile_Validation.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruckPage -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScripts.Automobile.TC_Automobile_Validation@3fc2959f]" name="afterMethod" is-config="true" duration-ms="-1617641060603" started-at="2021-04-05T22:14:20 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testScripts.Automobile.TC_Automobile_Validation -->
+    </test> <!-- Test - Home -->
   </suite> <!-- Suite -->
 </testng-results>

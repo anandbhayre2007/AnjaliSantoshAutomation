@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import configuration.Configuration;
 import driver.Driver;
-
+import functionLibrary.ApplicationLibrary;
 import pages.Home.HomePage;
 public class TC_HomePage_Validation extends Driver{
 	
@@ -29,6 +29,7 @@ public class TC_HomePage_Validation extends Driver{
 	@Parameters("browser")
 	public void setUp(String browser)
 	{
+		lib=new ApplicationLibrary();
 		this.dr=lib.launchBrowser(browser);
 		homePage=new HomePage(dr);
 		automobileEnterVehicleData= new pages.Automobile.EnterVehicleData(dr);
