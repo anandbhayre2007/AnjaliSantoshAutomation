@@ -1,4 +1,4 @@
-package testScripts.Home;
+package testScripts.Motorcycle;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,6 +20,7 @@ import org.testng.annotations.Test;
 
 import configuration.Configuration;
 import driver.Driver;
+import functionLibrary.ApplicationLibrary;
 import pages.Automobile.EnterVehicleData;
 import pages.Home.HomePage;
 
@@ -41,6 +42,7 @@ WebDriver dr;
 	@Parameters("browser")
 	public void setUp(String browser)
 	{
+		lib=new ApplicationLibrary();
 		this.dr=lib.launchBrowser(browser);
 		homePage=new HomePage(dr);
 		motorcycleEnterVehicleData= new pages.Motorcycle.EnterVehicleData(dr);

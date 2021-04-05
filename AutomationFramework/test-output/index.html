@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\Automation\GitRepo\AutomationFramework\testngautomobile.xml</span>
+                    <span>C:\Automation Selenium\GitRepo\AutomationFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods,  4 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Truck.TC_Truck_Validation" hash-for-method="testTruckPage">testTruckPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Camper.TC_Camper_Validation" hash-for-method="testTruckPage">testTruckPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Motorcycle.TC_MotorCycle_Validation" hash-for-method="testTruckPage">testTruckPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Automobile.TC_Automobile_Validation" hash-for-method="testTruckPage">testTruckPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +133,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Home.TC_Automobile_Validation" hash-for-method="testTruckPage">testTruckPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Home.TC_HomePage_Validation" hash-for-method="testAutombileLink">testAutombileLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Home.TC_HomePage_Validation" hash-for-method="testCamperLink">testCamperLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Home.TC_HomePage_Validation" hash-for-method="testMotorCycleLink">testMotorCycleLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Home.TC_HomePage_Validation" hash-for-method="testTruckLink">testTruckLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,10 +163,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScripts.Home.TC_Automobile_Validation</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testScripts.Camper.TC_Camper_Validation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,6 +174,123 @@
                   <a name="testTruckPage">
                   </a> <!-- testTruckPage -->
                   <span class="method-name">testTruckPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testScripts.Camper.TC_Camper_Validation.setUp(TC_Camper_Validation.java:45)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testScripts.Motorcycle.TC_MotorCycle_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTruckPage">
+                  </a> <!-- testTruckPage -->
+                  <span class="method-name">testTruckPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testScripts.Motorcycle.TC_MotorCycle_Validation.setUp(TC_MotorCycle_Validation.java:44)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testScripts.Automobile.TC_Automobile_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTruckPage">
+                  </a> <!-- testTruckPage -->
+                  <span class="method-name">testTruckPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testScripts.Automobile.TC_Automobile_Validation.setUp(TC_Automobile_Validation.java:44)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testScripts.Truck.TC_Truck_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTruckPage">
+                  </a> <!-- testTruckPage -->
+                  <span class="method-name">testTruckPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testScripts.Truck.TC_Truck_Validation.setUp(TC_Truck_Validation.java:44)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.Home.TC_HomePage_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutombileLink">
+                  </a> <!-- testAutombileLink -->
+                  <span class="method-name">testAutombileLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCamperLink">
+                  </a> <!-- testCamperLink -->
+                  <span class="method-name">testCamperLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMotorCycleLink">
+                  </a> <!-- testMotorCycleLink -->
+                  <span class="method-name">testMotorCycleLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTruckLink">
+                  </a> <!-- testTruckLink -->
+                  <span class="method-name">testTruckLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,19 +298,23 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Automation\GitRepo\AutomationFramework\testngautomobile.xml</span>
+            <span class="header-content">C:\Automation Selenium\GitRepo\AutomationFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test - Home&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScripts.Home.TC_Automobile_Validation&quot;/&gt;
+      &lt;class name=&quot;testScripts.Home.TC_HomePage_Validation&quot;/&gt;
+      &lt;class name=&quot;testScripts.Automobile.TC_Automobile_Validation&quot;/&gt;
+      &lt;class name=&quot;testScripts.Camper.TC_Camper_Validation&quot;/&gt;
+      &lt;class name=&quot;testScripts.Motorcycle.TC_MotorCycle_Validation&quot;/&gt;
+      &lt;class name=&quot;testScripts.Truck.TC_Truck_Validation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test - Home --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +326,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test - Home (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,16 +352,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testTruckPage')
-data.setCell(0, 2, 'testScripts.Home.TC_Automobile_Validation')
-data.setCell(0, 3, 244797);
+data.setCell(0, 1, 'testAutombileLink')
+data.setCell(0, 2, 'testScripts.Home.TC_HomePage_Validation')
+data.setCell(0, 3, 3371);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testTruckLink')
+data.setCell(1, 2, 'testScripts.Home.TC_HomePage_Validation')
+data.setCell(1, 3, 1515);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCamperLink')
+data.setCell(2, 2, 'testScripts.Home.TC_HomePage_Validation')
+data.setCell(2, 3, 741);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMotorCycleLink')
+data.setCell(3, 2, 'testScripts.Home.TC_HomePage_Validation')
+data.setCell(3, 3, 691);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testTruckPage')
+data.setCell(4, 2, 'testScripts.Truck.TC_Truck_Validation')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testTruckPage')
+data.setCell(5, 2, 'testScripts.Camper.TC_Camper_Validation')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testTruckPage')
+data.setCell(6, 2, 'testScripts.Motorcycle.TC_MotorCycle_Validation')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testTruckPage')
+data.setCell(7, 2, 'testScripts.Automobile.TC_Automobile_Validation')
+data.setCell(7, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -211,9 +404,45 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScripts.Camper.TC_Camper_Validation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">oneTimeSetUp</span>
+                <br/>
+                <span class="ignored-method-name">oneTimeTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScripts.Automobile.TC_Automobile_Validation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">oneTimeSetUp</span>
+                <br/>
+                <span class="ignored-method-name">oneTimeTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScripts.Motorcycle.TC_MotorCycle_Validation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">oneTimeSetUp</span>
+                <br/>
+                <span class="ignored-method-name">oneTimeTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScripts.Truck.TC_Truck_Validation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">oneTimeSetUp</span>
+                <br/>
+                <span class="ignored-method-name">oneTimeTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -222,30 +451,157 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScripts.Home.TC_Automobile_Validation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScripts.Home.TC_HomePage_Validation</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">oneTimeSetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">593 ms</span>
+                <span class="method-start">705 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">navigate</span>
-                <span class="method-start">21603 ms</span>
+                <span class="method-start">171959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAutombileLink</span>
+                <span class="method-start">178880 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testAutombileLink status=SUCCESS method=TC_HomePage_Validation.testAutombileLink()[...)</span>
+                <span class="method-start">182258 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">182260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCamperLink</span>
+                <span class="method-start">182513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testCamperLink status=SUCCESS method=TC_HomePage_Validation.testCamperLink()[pri:0,...)</span>
+                <span class="method-start">183255 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">183256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMotorCycleLink</span>
+                <span class="method-start">183567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testMotorCycleLink status=SUCCESS method=TC_HomePage_Validation.testMotorCycleLink(...)</span>
+                <span class="method-start">184260 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">184262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTruckLink</span>
+                <span class="method-start">184508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testTruckLink status=SUCCESS method=TC_HomePage_Validation.testTruckLink()[pri:0, i...)</span>
+                <span class="method-start">186025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">186026 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.Automobile.TC_Automobile_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">186191 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">186201 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTruckPage</span>
-                <span class="method-start">30152 ms</span>
+                <span class="method-start">186206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=testTruckPage status=SUCCESS method=TC_Automobile_Validation.testTruckPage()[pri:0,...)</span>
-                <span class="method-start">274960 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186213 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.Camper.TC_Camper_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">186216 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">186221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTruckPage</span>
+                <span class="method-start">186224 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186230 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.Motorcycle.TC_MotorCycle_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">186232 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">186237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTruckPage</span>
+                <span class="method-start">186239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186245 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.Truck.TC_Truck_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">186247 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">186252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTruckPage</span>
+                <span class="method-start">186255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186277 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.Home.TC_HomePage_Validation</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">oneTimeTearDown</span>
-                <span class="method-start">275067 ms</span>
+                <span class="method-start">186366 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

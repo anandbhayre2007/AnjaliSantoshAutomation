@@ -17,65 +17,62 @@ public class EnterProductData {
 	}
 	
 	//WebElements
-	By startdate=By.id("startdate");
-	By insurancesum=By.id("insurancesum");
-	By meritrating = By.id("meritrating");
-	By damageinsurance = By.id("damageinsurance");
+	By startDate=By.id("startdate");
+	By insuranceSum=By.xpath("//select[@id='insurancesum']");
+	By meritRating = By.id("meritrating");
+	By damageInsurance = By.id("damageinsurance");
 	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]");
-	By LegalDefenseInsurance = By.id("LegalDefenseInsurance");
-    By courtesycar =By.id("courtesycar");
-    By nextselectpriceoption = By.id("nextselectpriceoption");
+	By optionalProducts = By.xpath("//label[text()= 'Optional Products']");
+	By courtesyCar = By.id("courtesycar");
+	By prevButton = By.xpath("//button[@name='Prev (Enter Vehicle Data)']");
+	By nextButton = By.xpath("//button[@id='nextselectpriceoption']");
+	
+	//Visibility
+
     public boolean isStartDatePresent()
 	{
-		return lib.isElementPresent(dr, startdate);
+		return lib.isElementPresent(dr, startDate);
+
 		
 	}
-    
-    public boolean isInsuranceSumPresent()
+	
+	public boolean isInsuranceSumPresent()
 	{
-		return lib.isElementPresent(dr, insurancesum);
-		
+		return lib.isElementPresent(dr, insuranceSum);
 	}
-    
-    public boolean isMeritRating()
+	
+	public boolean isMeritRatingPresent()
 	{
-		return lib.isElementPresent(dr, meritrating);
-		
+		return lib.isElementPresent(dr,meritRating);
 	}
-    
-    public boolean isDamageInsurancePresent()
+	
+	public boolean isDamageInsurancePresent()
 	{
-		return lib.isElementPresent(dr, damageinsurance);
-		
+		return lib.isElementPresent(dr,damageInsurance);
 	}
-    
-    public boolean isEuroProtection()
+	
+	
+	public boolean isEuroProtection()
 	{
 		return lib.isElementPresent(dr, EuroProtection);
 		
 	}
-    
-    public boolean isLegalDefenseInsurancePresent()
+	
+	public boolean isOptionalProductsPresent()
 	{
-		return lib.isElementPresent(dr, LegalDefenseInsurance);
-		
+		return lib.isElementPresent(dr,optionalProducts);
 	}
-    
-    
-    
-    public boolean isnextselectpriceoptionPresent()
+	
+	public boolean isCourtesyCarPresent()
 	{
-		return lib.isElementPresent(dr, nextselectpriceoption);
-		
+		return lib.isElementPresent(dr,courtesyCar);
 	}
-    
-    public boolean isCourtesyCarPresent()
+	
+	public boolean isPrevButtonPresent()
 	{
-		return lib.isElementPresent(dr, courtesycar);
-		
-		
-		
+		return lib.isElementPresent(dr,prevButton);
 	}
+
     public void enterStartDate(String data18)
 	{	
 		dr.findElement(startdate).sendKeys(""+data18);
@@ -103,10 +100,44 @@ public class EnterProductData {
    	}
     
     public void clickEuroProtection()
+
+	
+	public boolean isNextButtonPresent()
+	{
+		return lib.isElementPresent(dr,nextButton);
+	}
+	
+	
+	//Actions
+	public void enterStartDate(String data )
+	{
+		dr.findElement(startDate).sendKeys(""+data);
+	}
+	
+	public void enterInsuranceSum(int data)
+	{
+		Select sel = new Select(dr.findElement(insuranceSum));
+		sel.selectByIndex(data);
+	}
+	
+	public void enterMeritRating(int data)
+	{
+		Select sel = new Select(dr.findElement(meritRating));
+		sel.selectByIndex(data);
+	}
+	
+	public void enterDamageInsurance(int data)
+	{
+		Select sel = new Select(dr.findElement(damageInsurance));
+		sel.selectByIndex(data);
+	}
+	
+	public void clickEuroProtection()
 	{	
 		dr.findElement(EuroProtection).click();
 	}
 	
+
     public void enterCourtesyCar(int data22)
  	{
  		//WebElement make1 = dr.findElement(By.id("make"));
@@ -117,6 +148,23 @@ public class EnterProductData {
     public void clickNextSelectPriceOption()
 	{	
 		dr.findElement(nextselectpriceoption).click();
+}
+
+	public void enterOptionalProducts()
+	{
+		dr.findElement(By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]")).click();
+
 	}
 	
+	public void enterCourtesyCar(int data)
+	{
+		Select sel = new Select(dr.findElement(courtesyCar));
+		sel.selectByIndex(data);
+	}
+	
+	public void enterNextSelectPriceOption()
+	{
+		dr.findElement(nextButton).click();
+	}
+
 }

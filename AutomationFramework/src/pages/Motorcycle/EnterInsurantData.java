@@ -42,6 +42,7 @@ public class EnterInsurantData {
 	By open = By.id("open");
 	By preventervehicledata = By.id("preventervehicledata");
 	By nextenterproductdata = By.id("nextenterproductdata");
+	
 	//Visibility
 	public boolean isFirstNamePresent()
 	{
@@ -169,6 +170,9 @@ public class EnterInsurantData {
 		
 	}
 	
+
+
+//	Actions
 	public void enterFirstName(String data)
 	{	
 		dr.findElement(firstname).sendKeys(""+data);
@@ -194,7 +198,6 @@ public class EnterInsurantData {
 		dr.findElement(streetaddress).sendKeys(""+data3);
 	}
 	
-
 	public void enterCountry(int data4)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
@@ -253,5 +256,10 @@ public class EnterInsurantData {
 	{	
 		dr.findElement(nextenterproductdata).click();
 	}
-	
+
+
 }
+
+	
+
+

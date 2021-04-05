@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import configuration.Configuration;
 import driver.Driver;
-
+import functionLibrary.ApplicationLibrary;
 import pages.Home.HomePage;
 public class TC_HomePage_Validation extends Driver{
 	
@@ -20,6 +20,7 @@ public class TC_HomePage_Validation extends Driver{
 	
 	HomePage homePage;
 	pages.Automobile.EnterVehicleData automobileEnterVehicleData;
+	pages.Automobile.EnterInsurantData automobileEnterInsurantData;
 	pages.Truck.EnterVehicleData truckEnterVehicleData;
 	pages.Motorcycle.EnterVehicleData motorcycleEnterVehicleData;
 	pages.Camper.EnterVehicleData camperEnterVehicleData;
@@ -28,6 +29,7 @@ public class TC_HomePage_Validation extends Driver{
 	@Parameters("browser")
 	public void setUp(String browser)
 	{
+		lib=new ApplicationLibrary();
 		this.dr=lib.launchBrowser(browser);
 		homePage=new HomePage(dr);
 		automobileEnterVehicleData= new pages.Automobile.EnterVehicleData(dr);
@@ -112,7 +114,7 @@ public class TC_HomePage_Validation extends Driver{
 		
 		//Step 3: Verify that Enter Vehicle Data Page is displayed
 		Assert.assertTrue(automobileEnterVehicleData.isMakePresent(),"Enter Vehicle data page is not displayed");
-				
+		
 		
 	}
 	
