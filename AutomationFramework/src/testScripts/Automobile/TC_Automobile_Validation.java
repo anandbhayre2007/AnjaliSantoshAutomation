@@ -1,4 +1,4 @@
-package testScripts.Home;
+package testScripts.Automobile;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -270,7 +270,7 @@ WebDriver dr;
    			Thread.sleep(5000);	
    			
    			//Step 51: Verify that merit rating is displayed		
-   			Assert.assertTrue(automobileEnterProductData.isMeritRating(),"merit rating field is not displayed");
+   			Assert.assertTrue(automobileEnterProductData.isMeritRatingPresent(),"merit rating field is not displayed");
    //Step 52: Verify that Insurance Sum is displayed
    			automobileEnterProductData.enterMeritRating(2);;		
    			
@@ -284,7 +284,7 @@ WebDriver dr;
    			
    	//Step 55: Verify that LegalDefenseInsurance and EuroProtection check boxes are displayed
    			Assert.assertTrue(automobileEnterProductData.isEuroProtection(),"EuroProtection checkbox is not displayed");
-   			Assert.assertTrue(automobileEnterProductData.isLegalDefenseInsurancePresent(),"LegalDefenseInsurance checkbox is not displayed");
+   			Assert.assertTrue(automobileEnterProductData.isDamageInsurancePresent(),"LegalDefenseInsurance checkbox is not displayed");
    //Step 56: Verify that EuroProtection is checked
    			automobileEnterProductData.clickEuroProtection();
    			
@@ -298,9 +298,9 @@ WebDriver dr;
    		
    			
    	//Step 59: Verify that Next Button is displayed
-   			Assert.assertTrue(automobileEnterProductData.isnextselectpriceoptionPresent()," Next Button is not displayed");
+   			Assert.assertTrue(automobileEnterProductData.isNextButtonPresent()," Next Button is not displayed");
    	//Step 60: Verify that Next Button  is clicked
-   			automobileEnterProductData.clickNextSelectPriceOption();
+   			automobileEnterProductData.enterNextSelectPriceOption();
    			
    			Thread.sleep(5000);
    			

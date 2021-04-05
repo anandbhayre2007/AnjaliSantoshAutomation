@@ -42,6 +42,7 @@ public class EnterInsurantData {
 	By open = By.id("open");
 	By preventervehicledata = By.id("preventervehicledata");
 	By nextenterproductdata = By.id("nextenterproductdata");
+	
 	//Visibility
 	public boolean isFirstNamePresent()
 	{
@@ -169,31 +170,6 @@ public class EnterInsurantData {
 		
 	}
 	
-	public void enterFirstName(String data)
-	{	
-		dr.findElement(firstname).sendKeys(""+data);
-	}
-	
-	public void enterLastName(String data1)
-	{	
-		dr.findElement(lastname).sendKeys(""+data1);
-	}
-	
-	public void enterBirthDate(String data2)
-	{	
-		dr.findElement(birthdate).sendKeys(""+data2);
-	}
-	
-	public void clickGender()
-	{	
-		dr.findElement(gendermale).click();
-	}
-	
-	public void enterstreetaddress(String data3)
-	{	
-		dr.findElement(streetaddress).sendKeys(""+data3);
-	}
-	
 
 
 //	Actions
@@ -285,5 +261,5 @@ public class EnterInsurantData {
 }
 
 	
-}
+
 

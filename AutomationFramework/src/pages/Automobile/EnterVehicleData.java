@@ -95,8 +95,8 @@ public class EnterVehicleData {
 		sel.selectByIndex(data);
 	}
 
-	public void enterListPrice(String data) {
-		dr.findElement(listprice).sendKeys(data);
+	public void enterListPrice(int i) {
+		dr.findElement(listprice).sendKeys(""+i);
 	}
 
 	public void enterLicensePlateNumber(int data) {

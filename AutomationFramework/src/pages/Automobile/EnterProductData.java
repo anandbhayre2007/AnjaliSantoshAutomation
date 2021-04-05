@@ -21,27 +21,17 @@ public class EnterProductData {
 	By insuranceSum=By.xpath("//select[@id='insurancesum']");
 	By meritRating = By.id("meritrating");
 	By damageInsurance = By.id("damageinsurance");
+	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]");
 	By optionalProducts = By.xpath("//label[text()= 'Optional Products']");
 	By courtesyCar = By.id("courtesycar");
 	By prevButton = By.xpath("//button[@name='Prev (Enter Vehicle Data)']");
 	By nextButton = By.xpath("//button[@id='nextselectpriceoption']");
 	
 	//Visibility
-	public boolean isStartDatePresent()
-	{
-		return lib.isElementPresent(dr, startDate);
 
-	By startdate=By.id("startdate");
-	By insurancesum=By.id("insurancesum");
-	By meritrating = By.id("meritrating");
-	By damageinsurance = By.id("damageinsurance");
-	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]");
-	By LegalDefenseInsurance = By.id("LegalDefenseInsurance");
-    By courtesycar =By.id("courtesycar");
-    By nextselectpriceoption = By.id("nextselectpriceoption");
     public boolean isStartDatePresent()
 	{
-		return lib.isElementPresent(dr, startdate);
+		return lib.isElementPresent(dr, startDate);
 
 		
 	}
@@ -59,6 +49,13 @@ public class EnterProductData {
 	public boolean isDamageInsurancePresent()
 	{
 		return lib.isElementPresent(dr,damageInsurance);
+	}
+	
+	
+	public boolean isEuroProtection()
+	{
+		return lib.isElementPresent(dr, EuroProtection);
+		
 	}
 	
 	public boolean isOptionalProductsPresent()
@@ -104,6 +101,11 @@ public class EnterProductData {
 	{
 		Select sel = new Select(dr.findElement(damageInsurance));
 		sel.selectByIndex(data);
+	}
+	
+	public void clickEuroProtection()
+	{	
+		dr.findElement(EuroProtection).click();
 	}
 	
 	public void enterOptionalProducts()
