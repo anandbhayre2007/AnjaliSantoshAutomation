@@ -75,7 +75,7 @@ WebDriver dr;
 	}
 	
 	@Test
-	public void testTruckPage() throws Exception
+	public void testAutomobilePage() throws Exception
 	{
 		
 		//step 1. : Verify Automobile link is present on HomePage

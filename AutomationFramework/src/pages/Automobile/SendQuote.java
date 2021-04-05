@@ -59,34 +59,34 @@ public class SendQuote {
     	return lib.isElementPresent(dr, sendemail);
     }
     
-    public void entereMail(String data)
+    public void entereMail(String data23)
 	{	
-		dr.findElement(email).sendKeys(""+data);
+		dr.findElement(email).sendKeys(""+data23);
 	}
     
-    public void enterPhone(int data1)
+    public void enterPhone(int data24)
    	{	
-   		dr.findElement(phone).sendKeys(""+data1);
+   		dr.findElement(phone).sendKeys(""+data24);
    	}
     
-    public void enterUsername(String data2)
+    public void enterUsername(String data25)
    	{	
-   		dr.findElement(username).sendKeys(""+data2);
+   		dr.findElement(username).sendKeys(""+data25);
    	}
     
-    public void enterPassword(String data3)
+    public void enterPassword(String data26)
    	{	
-   		dr.findElement(password).sendKeys(""+data3);
+   		dr.findElement(password).sendKeys(""+data26);
    	}
     
-    public void enterConfirmPassword(String data4)
+    public void enterConfirmPassword(String data27)
    	{	
-   		dr.findElement(confirmpassword).sendKeys(""+data4);
+   		dr.findElement(confirmpassword).sendKeys(""+data27);
    	}
     
-    public void enterComments(String data5)
+    public void enterComments(String data28)
    	{	
-   		dr.findElement(comments).sendKeys(""+data5);
+   		dr.findElement(comments).sendKeys(""+data28);
    	}
     
     public void clickSendEMail()

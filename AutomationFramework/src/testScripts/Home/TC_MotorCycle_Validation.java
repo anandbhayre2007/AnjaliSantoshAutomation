@@ -74,7 +74,7 @@ WebDriver dr;
 	}
 	
 	@Test
-	public void testTruckPage() throws Exception
+	public void testMotorCyclePage() throws Exception
 	{
 		
 		//step 1. : Verify MotorCycle link is present on HomePage

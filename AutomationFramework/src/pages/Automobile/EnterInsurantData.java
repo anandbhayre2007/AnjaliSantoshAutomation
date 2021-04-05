@@ -169,19 +169,19 @@ public class EnterInsurantData {
 		
 	}
 	
-	public void enterFirstName(String data)
+	public void enterFirstName(String data8)
 	{	
-		dr.findElement(firstname).sendKeys(""+data);
+		dr.findElement(firstname).sendKeys(""+data8);
 	}
 	
-	public void enterLastName(String data1)
+	public void enterLastName(String data9)
 	{	
-		dr.findElement(lastname).sendKeys(""+data1);
+		dr.findElement(lastname).sendKeys(""+data9);
 	}
 	
-	public void enterBirthDate(String data2)
+	public void enterBirthDate(String data10)
 	{	
-		dr.findElement(birthdate).sendKeys(""+data2);
+		dr.findElement(birthdate).sendKeys(""+data10);
 	}
 	
 	public void clickGender()
@@ -189,34 +189,34 @@ public class EnterInsurantData {
 		dr.findElement(gendermale).click();
 	}
 	
-	public void enterstreetaddress(String data3)
+	public void enterstreetaddress(String data11)
 	{	
-		dr.findElement(streetaddress).sendKeys(""+data3);
+		dr.findElement(streetaddress).sendKeys(""+data11);
 	}
 	
 
-	public void enterCountry(int data4)
+	public void enterCountry(int data12)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(country));
-		sel.selectByIndex(data4);	
+		sel.selectByIndex(data12);	
 	}
 	
-	public void enterZipCode(int data5)
+	public void enterZipCode(int data13)
 	{	
-		dr.findElement(zipcode).sendKeys(""+data5);
+		dr.findElement(zipcode).sendKeys(""+data13);
 	}
 	
-	public void enterCity(String data6)
+	public void enterCity(String data14)
 	{	
-		dr.findElement(city).sendKeys(""+data6);
+		dr.findElement(city).sendKeys(""+data14);
 	}
 	
-	public void enterOccupation(int data7)
+	public void enterOccupation(int data15)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(occupation));
-		sel.selectByIndex(data7);	
+		sel.selectByIndex(data15);	
 	}
 	
 	public void clickspeeding()
@@ -224,19 +224,19 @@ public class EnterInsurantData {
 		dr.findElement(speeding).click();
 	}
 	
-	public void enterWebsite(String data8)
+	public void enterWebsite(String data16)
 	{	
-		dr.findElement(website).sendKeys(""+data8);
+		dr.findElement(website).sendKeys(""+data16);
 	}
 	
-	public void enterPicture(String data9) throws AWTException, InterruptedException
+	public void enterPicture(String data17) throws AWTException, InterruptedException
 	{	
       dr.findElement(By.id("open")).click();
 		
 		//Robot CLass
 		Robot robot = new Robot();
 		
-		StringSelection cb = new StringSelection(""+data9);
+		StringSelection cb = new StringSelection(""+data17);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(cb, null);
 		
 		Thread.sleep(10000);

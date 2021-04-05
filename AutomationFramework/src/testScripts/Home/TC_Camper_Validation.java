@@ -75,7 +75,7 @@ WebDriver dr;
 	}
 	
 	@Test
-	public void testTruckPage() throws Exception
+	public void testCamperPage() throws Exception
 	{
 		
 		//step 1. : Verify Camper link is present on HomePage

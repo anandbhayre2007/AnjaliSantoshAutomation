@@ -76,30 +76,30 @@ public class EnterProductData {
 		
 		
 	}
-    public void enterStartDate(String data)
+    public void enterStartDate(String data18)
 	{	
-		dr.findElement(startdate).sendKeys(""+data);
+		dr.findElement(startdate).sendKeys(""+data18);
 	}
     
-    public void enterInsuranceSum(int data1)
+    public void enterInsuranceSum(int data19)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(insurancesum));
-		sel.selectByIndex(data1);	
+		sel.selectByIndex(data19);	
 	}
     
-    public void enterMeritRating(int data5)
+    public void enterMeritRating(int data20)
  	{
  		//WebElement make1 = dr.findElement(By.id("make"));
  		Select sel = new Select(dr.findElement(meritrating));
- 		sel.selectByIndex(data5);	
+ 		sel.selectByIndex(data20);	
  	}
     
-    public void enterDamageInsurance(int data2)
+    public void enterDamageInsurance(int data21)
    	{
    		//WebElement make1 = dr.findElement(By.id("make"));
    		Select sel = new Select(dr.findElement(damageinsurance));
-   		sel.selectByIndex(data2);	
+   		sel.selectByIndex(data21);	
    	}
     
     public void clickEuroProtection()
@@ -107,11 +107,11 @@ public class EnterProductData {
 		dr.findElement(EuroProtection).click();
 	}
 	
-    public void enterCourtesyCar(int data6)
+    public void enterCourtesyCar(int data22)
  	{
  		//WebElement make1 = dr.findElement(By.id("make"));
  		Select sel = new Select(dr.findElement(courtesycar));
- 		sel.selectByIndex(data6);	
+ 		sel.selectByIndex(data22);	
  	}
     
     public void clickNextSelectPriceOption()
