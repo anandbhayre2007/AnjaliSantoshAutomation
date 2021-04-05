@@ -79,11 +79,11 @@ public class EnterVehicleData {
 		dr.findElement(enginePerformance).sendKeys(""+data);
 	}
 	
-	public void enterMake(int data1)
+	public void enterMake(String data1)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(make));
-		sel.selectByIndex(data1);	
+		sel.selectByVisibleText(data1);
 	}
 	
 	public void enterDateOfManufacture(String data2 )

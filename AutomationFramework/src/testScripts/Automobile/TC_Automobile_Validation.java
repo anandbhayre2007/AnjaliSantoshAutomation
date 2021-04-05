@@ -89,7 +89,8 @@ public class TC_Automobile_Validation extends Driver {
 		// Step 3: Verify that Enter Vehicle Data Page is displayed
 		Assert.assertTrue(automobileEnterVehicleData.isMakePresent(), "Make field is not displayed");
 		// Step 4: Verify that MAKE field link is working
-		automobileEnterVehicleData.enterMake(2);
+		String make=xlLib.getCelllData("Automobile", 1, 0);
+		automobileEnterVehicleData.enterMake(make);
 
 		Thread.sleep(5000);
 

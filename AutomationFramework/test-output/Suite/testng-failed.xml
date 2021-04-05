@@ -4,16 +4,6 @@
   <test thread-count="5" name="Test - Home(failed)" parallel="tests">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testScripts.Camper.TC_Camper_Validation">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="navigate"/>
-          <include name="oneTimeSetUp"/>
-          <include name="testTruckPage"/>
-          <include name="oneTimeTearDown"/>
-        </methods>
-      </class> <!-- testScripts.Camper.TC_Camper_Validation -->
       <class name="testScripts.Automobile.TC_Automobile_Validation">
         <methods>
           <include name="testTruckPage"/>
@@ -24,26 +14,6 @@
           <include name="navigate"/>
         </methods>
       </class> <!-- testScripts.Automobile.TC_Automobile_Validation -->
-      <class name="testScripts.Motorcycle.TC_MotorCycle_Validation">
-        <methods>
-          <include name="oneTimeSetUp"/>
-          <include name="navigate"/>
-          <include name="testTruckPage"/>
-          <include name="oneTimeTearDown"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testScripts.Motorcycle.TC_MotorCycle_Validation -->
-      <class name="testScripts.Truck.TC_Truck_Validation">
-        <methods>
-          <include name="testTruckPage"/>
-          <include name="oneTimeSetUp"/>
-          <include name="oneTimeTearDown"/>
-          <include name="navigate"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testScripts.Truck.TC_Truck_Validation -->
     </classes>
   </test> <!-- Test - Home(failed) -->
 </suite> <!-- Failed suite [Suite] -->

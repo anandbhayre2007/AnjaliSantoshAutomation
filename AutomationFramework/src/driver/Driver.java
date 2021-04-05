@@ -12,7 +12,7 @@ import functionLibrary.ExcelFunctionLibrary;
 public class Driver {
 	
 	public ApplicationLibrary lib;
-	public ExcelFunctionLibrary xlLib;
+	public static ExcelFunctionLibrary xlLib;
 	
 	@BeforeSuite
 	public void oneTimeSetUp() throws IOException
