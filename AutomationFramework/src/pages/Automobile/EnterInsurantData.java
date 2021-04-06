@@ -9,10 +9,12 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
+import driver.Driver;
 import functionLibrary.ApplicationLibrary;
 
-public class EnterInsurantData {
+public class EnterInsurantData extends Driver{
 	WebDriver dr;
 	ApplicationLibrary lib= new ApplicationLibrary();
 	
@@ -195,14 +197,14 @@ public class EnterInsurantData {
 	}
 	
 
-	public void enterCountry(int data12)
+	public void enterCountry(String data12)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(country));
-		sel.selectByIndex(data12);	
+		sel.selectByVisibleText(data12);	
 	}
 	
-	public void enterZipCode(int data13)
+	public void enterZipCode(String data13)
 	{	
 		dr.findElement(zipcode).sendKeys(""+data13);
 	}
@@ -212,11 +214,11 @@ public class EnterInsurantData {
 		dr.findElement(city).sendKeys(""+data14);
 	}
 	
-	public void enterOccupation(int data15)
+	public void enterOccupation(String data15)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(occupation));
-		sel.selectByIndex(data15);	
+		sel.selectByVisibleText(data15);	
 	}
 	
 	public void clickspeeding()
@@ -252,5 +254,89 @@ public class EnterInsurantData {
 	public void clickExtEnterProductData()
 	{	
 		dr.findElement(nextenterproductdata).click();
+	}
+	
+	
+	public void enterAutomobileInsurantData( ) throws Exception {
+		
+		String fn;
+		String ln;
+		String bd;
+		String sadd;
+		String country;
+		String zipcode;
+		String city;
+		String occupation;
+		String website;
+		String picture;
+		
+		Assert.assertTrue(isFirstNamePresent(), "First Name field is not displayed");
+		fn= xlLib.getCelllData("Automobile", 1, 8);
+		enterFirstName(fn);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isLastNamePresent(), "Last Name field is not displayed");
+		ln= xlLib.getCelllData("Automobile", 1, 9);
+		enterLastName(ln);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isBirthDatePresent(), "Birth Date field is not displayed");
+		bd= xlLib.getCelllData("Automobile", 1, 10);
+		enterBirthDate(bd);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isGenderMalePresent(), "Gender Male field is not displayed");
+		Assert.assertTrue(isGenderFemalePresent(), "Gender Female field is not displayed");
+		clickGender();
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isStreetAddressPresent(),"enter street address field is not displayed");
+		sadd= xlLib.getCelllData("Automobile", 1, 11);
+		enterstreetaddress(sadd);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isCountryPresent(), "Country field is not displayed");
+		country= xlLib.getCelllData("Automobile", 1, 12);
+		enterCountry(country);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isZipCodePresent(), "Country field is not displayed");
+		zipcode= xlLib.getCelllData("Automobile", 1, 13);
+		enterZipCode(zipcode);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isCityPresent(), "City field is not displayed");
+		city= xlLib.getCelllData("Automobile", 1, 14);
+		enterCity(city);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isOccupationPresent(), "Occupation field is not displayed");
+		occupation= xlLib.getCelllData("Automobile", 1, 15);
+		enterOccupation(occupation);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isSpeedingPresent(), "Speeding field is not displayed");
+		Assert.assertTrue(isBungeeJumpingPresent(),"Bungee Jumping field is not displayed");
+		Assert.assertTrue(isCliffDivingPresent(), "Cliff Diving field is not displayed");
+		Assert.assertTrue(isSkyDivingPresent(), "Sky Diving field is not displayed");
+		Assert.assertTrue(isOtherPresent(), "Other field is not displayed");
+		clickspeeding();
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isWebSitePresent(), "Website field is not displayed");
+		website= xlLib.getCelllData("Automobile", 1, 16);
+		enterWebsite(website);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isPicturePresent(), "Picture field is not displayed");
+		Assert.assertTrue(isOpenPresent(), "Open Button is not displayed");
+		picture= xlLib.getCelllData("Automobile", 1, 17);
+		enterPicture(picture);
+		Thread.sleep(5000);
+
+		Assert.assertTrue(isNextEnterProductDataPresent(), "Next button is not displayed");
+		clickExtEnterProductData();
+		Thread.sleep(5000);
+		
 	}
 }

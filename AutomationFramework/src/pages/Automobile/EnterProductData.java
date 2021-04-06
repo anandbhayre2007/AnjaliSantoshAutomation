@@ -3,10 +3,12 @@ package pages.Automobile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
+import driver.Driver;
 import functionLibrary.ApplicationLibrary;
 
-public class EnterProductData {
+public class EnterProductData extends Driver {
 	
 	WebDriver dr;
 	ApplicationLibrary lib= new ApplicationLibrary();
@@ -23,7 +25,7 @@ public class EnterProductData {
 	By damageinsurance = By.id("damageinsurance");
 	By EuroProtection = By.xpath("//body/div[@id='site-content']/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/section[3]/div[5]/p[1]/label[1]/span[1]");
 	By LegalDefenseInsurance = By.id("LegalDefenseInsurance");
-    By courtesycar =By.id("courtesycar");
+    By courtesycar =By.xpath("//select[@id='courtesycar']");
     By nextselectpriceoption = By.id("nextselectpriceoption");
     public boolean isStartDatePresent()
 	{
@@ -81,25 +83,25 @@ public class EnterProductData {
 		dr.findElement(startdate).sendKeys(""+data18);
 	}
     
-    public void enterInsuranceSum(int data19)
+    public void enterInsuranceSum(String data19)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(insurancesum));
-		sel.selectByIndex(data19);	
+		sel.selectByVisibleText(data19);	
 	}
     
-    public void enterMeritRating(int data20)
+    public void enterMeritRating(String data20)
  	{
  		//WebElement make1 = dr.findElement(By.id("make"));
  		Select sel = new Select(dr.findElement(meritrating));
- 		sel.selectByIndex(data20);	
+ 		sel.selectByVisibleText(data20);	
  	}
     
-    public void enterDamageInsurance(int data21)
+    public void enterDamageInsurance(String data21)
    	{
    		//WebElement make1 = dr.findElement(By.id("make"));
    		Select sel = new Select(dr.findElement(damageinsurance));
-   		sel.selectByIndex(data21);	
+   		sel.selectByVisibleText(data21);	
    	}
     
     public void clickEuroProtection()
@@ -107,16 +109,58 @@ public class EnterProductData {
 		dr.findElement(EuroProtection).click();
 	}
 	
-    public void enterCourtesyCar(int data22)
+    public void enterCourtesyCar(String data22)
  	{
  		//WebElement make1 = dr.findElement(By.id("make"));
  		Select sel = new Select(dr.findElement(courtesycar));
- 		sel.selectByIndex(data22);	
+ 		sel.selectByVisibleText(data22);	
  	}
     
     public void clickNextSelectPriceOption()
 	{	
 		dr.findElement(nextselectpriceoption).click();
 	}
+    
+    public void enterAutomobileProductData() throws Exception {
+    	
+    	String sd;
+    	String is;
+    	String mr;
+    	String di;
+    	String cc;
+    	
+    	Assert.assertTrue(isStartDatePresent(),"Start Date field is not displayed"); 
+    	sd= xlLib.getCelllData("Automobile", 1, 18);
+    	enterStartDate(sd);
+    	Thread.sleep(5000);
+    			  
+    	Assert.assertTrue(isInsuranceSumPresent(),"Insurance field is not displayed"); 
+    	is= xlLib.getCelllData("Automobile", 1, 19);
+    	enterInsuranceSum(is);
+    	Thread.sleep(5000);
+    			  
+    	Assert.assertTrue(isMeritRating(),"merit rating field is not displayed");
+    	mr= xlLib.getCelllData("Automobile", 1, 20);
+    	enterMeritRating(mr);
+    			  
+    	Assert.assertTrue(isDamageInsurancePresent(),"Damage Insurance field is not displayed");
+    	di= xlLib.getCelllData("Automobile", 1, 21);
+    	enterDamageInsurance(di);
+    	Thread.sleep(5000);
+    			  
+    	Assert.assertTrue(isEuroProtection(),"EuroProtection checkbox is not displayed");
+    	Assert.assertTrue(isDamageInsurancePresent(),"LegalDefenseInsurance checkbox is not displayed");
+    	clickEuroProtection();
+    	Thread.sleep(5000); 
+    			  
+    	Assert.assertTrue(isCourtesyCarPresent(),"courtesy car checkbox is not displayed"); 
+    	cc= xlLib.getCelllData("Automobile", 1, 22);
+    	enterCourtesyCar(cc);
+    	Thread.sleep(5000);
+    			  
+    	Assert.assertTrue(isnextselectpriceoptionPresent()," Next Button is not displayed"); 
+    	clickNextSelectPriceOption();
+		Thread.sleep(5000);
+    }
 	
 }
