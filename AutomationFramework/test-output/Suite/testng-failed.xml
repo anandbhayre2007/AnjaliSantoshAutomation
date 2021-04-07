@@ -6,7 +6,7 @@
     <classes>
       <class name="testScripts.Automobile.TC_Automobile_Validation">
         <methods>
-          <include name="testTruckPage"/>
+          <include name="endTest"/>
           <include name="oneTimeSetUp"/>
           <include name="afterMethod"/>
           <include name="setUp"/>

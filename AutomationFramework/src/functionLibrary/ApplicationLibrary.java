@@ -68,8 +68,8 @@ public class ApplicationLibrary {
 	
 	public void captureScreenShot(WebDriver dr, String fileName) throws IOException
 	{
-		  TakesScreenshot screenshot=(TakesScreenshot)dr; File
-		  src=screenshot.getScreenshotAs(OutputType.FILE);
+		  TakesScreenshot screenshot=(TakesScreenshot)dr; 
+		  File src=screenshot.getScreenshotAs(OutputType.FILE);
 		  String timeStamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		  FileHandler.copy(src, new File(Configuration.screenshotPath+fileName+"_"+timeStamp+".png"));
 	}
