@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import functionLibrary.ApplicationLibrary;
 
@@ -60,6 +61,20 @@ public class SelectPriceOption {
 		dr.findElement(nextsendquote).click();
 	}
 	
+	
+ public void enterTruckSelectPriceOptionData() throws Exception {
+		
+		Assert.assertTrue(isselectsilver(),"Silver Radio Button is not displayed");
+		Assert.assertTrue(isselectgold(),"Gold Radio Button is not displayed");
+		Assert.assertTrue(isselectplatinum()," Platinum Radio Button is not displayed");
+		Assert.assertTrue(isselectultimate()," Ultimate Radio Button is not displayed");
+		clickSelectUltimate();
+		Thread.sleep(3500);
+		
+		Assert.assertTrue(isnextsendquote(), "Next Button is not displayed"); 
+		clickNextSendQuote();
+		
+	}
 	
 }
 

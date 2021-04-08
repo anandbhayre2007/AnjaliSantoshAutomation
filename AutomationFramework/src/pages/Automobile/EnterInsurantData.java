@@ -273,47 +273,47 @@ public class EnterInsurantData extends Driver{
 		Assert.assertTrue(isFirstNamePresent(), "First Name field is not displayed");
 		fn= xlLib.getCelllData("Automobile", 1, 8);
 		enterFirstName(fn);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isLastNamePresent(), "Last Name field is not displayed");
 		ln= xlLib.getCelllData("Automobile", 1, 9);
 		enterLastName(ln);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isBirthDatePresent(), "Birth Date field is not displayed");
 		bd= xlLib.getCelllData("Automobile", 1, 10);
 		enterBirthDate(bd);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isGenderMalePresent(), "Gender Male field is not displayed");
 		Assert.assertTrue(isGenderFemalePresent(), "Gender Female field is not displayed");
 		clickGender();
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isStreetAddressPresent(),"enter street address field is not displayed");
 		sadd= xlLib.getCelllData("Automobile", 1, 11);
 		enterstreetaddress(sadd);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isCountryPresent(), "Country field is not displayed");
 		country= xlLib.getCelllData("Automobile", 1, 12);
 		enterCountry(country);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isZipCodePresent(), "Country field is not displayed");
 		zipcode= xlLib.getCelllData("Automobile", 1, 13);
 		enterZipCode(zipcode);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isCityPresent(), "City field is not displayed");
 		city= xlLib.getCelllData("Automobile", 1, 14);
 		enterCity(city);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isOccupationPresent(), "Occupation field is not displayed");
 		occupation= xlLib.getCelllData("Automobile", 1, 15);
 		enterOccupation(occupation);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isSpeedingPresent(), "Speeding field is not displayed");
 		Assert.assertTrue(isBungeeJumpingPresent(),"Bungee Jumping field is not displayed");
@@ -321,22 +321,22 @@ public class EnterInsurantData extends Driver{
 		Assert.assertTrue(isSkyDivingPresent(), "Sky Diving field is not displayed");
 		Assert.assertTrue(isOtherPresent(), "Other field is not displayed");
 		clickspeeding();
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isWebSitePresent(), "Website field is not displayed");
 		website= xlLib.getCelllData("Automobile", 1, 16);
 		enterWebsite(website);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isPicturePresent(), "Picture field is not displayed");
 		Assert.assertTrue(isOpenPresent(), "Open Button is not displayed");
 		picture= xlLib.getCelllData("Automobile", 1, 17);
 		enterPicture(picture);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isNextEnterProductDataPresent(), "Next button is not displayed");
 		clickExtEnterProductData();
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		
 	}
 }

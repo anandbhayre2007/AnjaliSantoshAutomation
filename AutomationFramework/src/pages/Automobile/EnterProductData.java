@@ -132,12 +132,12 @@ public class EnterProductData extends Driver {
     	Assert.assertTrue(isStartDatePresent(),"Start Date field is not displayed"); 
     	sd= xlLib.getCelllData("Automobile", 1, 18);
     	enterStartDate(sd);
-    	Thread.sleep(5000);
+    	Thread.sleep(3500);
     			  
     	Assert.assertTrue(isInsuranceSumPresent(),"Insurance field is not displayed"); 
     	is= xlLib.getCelllData("Automobile", 1, 19);
     	enterInsuranceSum(is);
-    	Thread.sleep(5000);
+    	Thread.sleep(3500);
     			  
     	Assert.assertTrue(isMeritRating(),"merit rating field is not displayed");
     	mr= xlLib.getCelllData("Automobile", 1, 20);
@@ -146,21 +146,21 @@ public class EnterProductData extends Driver {
     	Assert.assertTrue(isDamageInsurancePresent(),"Damage Insurance field is not displayed");
     	di= xlLib.getCelllData("Automobile", 1, 21);
     	enterDamageInsurance(di);
-    	Thread.sleep(5000);
+    	Thread.sleep(3500);
     			  
     	Assert.assertTrue(isEuroProtection(),"EuroProtection checkbox is not displayed");
     	Assert.assertTrue(isDamageInsurancePresent(),"LegalDefenseInsurance checkbox is not displayed");
     	clickEuroProtection();
-    	Thread.sleep(5000); 
+    	Thread.sleep(3500); 
     			  
     	Assert.assertTrue(isCourtesyCarPresent(),"courtesy car checkbox is not displayed"); 
     	cc= xlLib.getCelllData("Automobile", 1, 22);
     	enterCourtesyCar(cc);
-    	Thread.sleep(5000);
+    	Thread.sleep(3500);
     			  
     	Assert.assertTrue(isnextselectpriceoptionPresent()," Next Button is not displayed"); 
     	clickNextSelectPriceOption();
-		Thread.sleep(5000);
+		Thread.sleep(3500);
     }
 	
 }

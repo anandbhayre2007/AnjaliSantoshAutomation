@@ -122,32 +122,32 @@ public class SendQuote extends Driver{
     Assert.assertTrue(isemail(),"Email field is not displayed"); 
     mail = xlLib.getCelllData("Automobile", 1, 23);
     entereMail(mail);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(isphone(),"Phone field is not displayed");
     phone = xlLib.getCelllData("Automobile", 1, 24);
     enterPhone(phone);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(isusername(),"Username field is not displayed");
     username = xlLib.getCelllData("Automobile", 1, 25);
     enterUsername(username);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(ispassword(),"Password field is not displayed");
     password = xlLib.getCelllData("Automobile", 1, 26);
     enterPassword(password);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(isconfirmpassword(),"Confirm Password field is not displayed");
     cp = xlLib.getCelllData("Automobile", 1, 27);
     enterConfirmPassword(cp);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(iscomments(),"Comments field is not displayed");
     comments = xlLib.getCelllData("Automobile", 1, 28);
     enterComments(comments);
-    Thread.sleep(5000);
+    Thread.sleep(3500);
     
     Assert.assertTrue(isSendeMail(),"Send Button is not displayed"); 
     clickSendEMail();

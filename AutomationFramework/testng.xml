@@ -4,11 +4,11 @@
   <test thread-count="5" name="Test - Home">
    <parameter name="browser" value="Chrome"></parameter>
     <classes>
-      <!-- <class name="testScripts.Home.TC_HomePage_Validation"/> -->
+      <class name="testScripts.Home.TC_HomePage_Validation"/>
       <class name="testScripts.Automobile.TC_Automobile_Validation"/>
-     <!--  <class name="testScripts.Camper.TC_Camper_Validation"/>
+      <class name="testScripts.Camper.TC_Camper_Validation"/>
       <class name="testScripts.Motorcycle.TC_MotorCycle_Validation"/>
-      <class name="testScripts.Truck.TC_Truck_Validation"/> -->
+      <class name="testScripts.Truck.TC_Truck_Validation"/>
     </classes>
   </test> <!-- Test -->
 

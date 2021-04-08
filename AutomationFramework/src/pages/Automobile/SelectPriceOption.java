@@ -69,7 +69,7 @@ public class SelectPriceOption {
 	Assert.assertTrue(isselectplatinum()," Platinum Radio Button is not displayed");
 	Assert.assertTrue(isselectultimate()," Ultimate Radio Button is not displayed");
 	clickSelectUltimate();
-	Thread.sleep(5000);
+	Thread.sleep(3500);
 	
 	Assert.assertTrue(isnextsendquote(), "Next Button is not displayed"); 
 	clickNextSendQuote();

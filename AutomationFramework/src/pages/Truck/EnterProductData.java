@@ -4,10 +4,12 @@ package pages.Truck;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
+import driver.Driver;
 import functionLibrary.ApplicationLibrary;
 
-public class EnterProductData {
+public class EnterProductData extends Driver{
 	
 	WebDriver dr;
 	ApplicationLibrary lib= new ApplicationLibrary();
@@ -60,23 +62,25 @@ public class EnterProductData {
 		
 	}
     
+//    Actions
+    
     public void enterStartDate(String data)
 	{	
 		dr.findElement(startdate).sendKeys(""+data);
 	}
     
-    public void enterInsuranceSum(int data1)
+    public void enterInsuranceSum(String data1)
 	{
 		//WebElement make1 = dr.findElement(By.id("make"));
 		Select sel = new Select(dr.findElement(insurancesum));
-		sel.selectByIndex(data1);	
+		sel.selectByVisibleText(data1);	
 	}
     
-    public void enterDamageInsurance(int data2)
+    public void enterDamageInsurance(String data2)
    	{
    		//WebElement make1 = dr.findElement(By.id("make"));
    		Select sel = new Select(dr.findElement(damageinsurance));
-   		sel.selectByIndex(data2);	
+   		sel.selectByVisibleText(data2);	
    	}
     
     public void clickEuroProtection()
@@ -89,6 +93,38 @@ public class EnterProductData {
 		dr.findElement(nextselectpriceoption).click();
 	}
 	
+    
+   public void enterTruckProductData() throws Exception {
+    	
+    	String sd;
+    	String is;
+    	String di;
+    	
+    	Assert.assertTrue(isStartDatePresent(),"Start Date field is not displayed"); 
+    	sd= xlLib.getCelllData("Truck", 1, 20);
+    	enterStartDate(sd);
+    	Thread.sleep(3500);
+    			  
+    	Assert.assertTrue(isInsuranceSumPresent(),"Insurance field is not displayed"); 
+    	is= xlLib.getCelllData("Truck", 1, 21);
+    	enterInsuranceSum(is);
+    	Thread.sleep(3500);
+    			  
+    	Assert.assertTrue(isDamageInsurancePresent(),"Damage Insurance field is not displayed");
+    	di= xlLib.getCelllData("Truck", 1, 22);
+    	enterDamageInsurance(di);
+    	Thread.sleep(3500);
+    			  
+    	Assert.assertTrue(isEuroProtection(),"EuroProtection checkbox is not displayed");
+    	Assert.assertTrue(isDamageInsurancePresent(),"LegalDefenseInsurance checkbox is not displayed");
+    	clickEuroProtection();
+    	Thread.sleep(3500); 
+    			  
+    	Assert.assertTrue(isnextselectpriceoptionPresent()," Next Button is not displayed"); 
+    	clickNextSelectPriceOption();
+		Thread.sleep(3500);
+    
+}
     
     
 }

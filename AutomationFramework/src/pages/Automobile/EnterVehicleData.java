@@ -127,12 +127,12 @@ public class EnterVehicleData extends Driver {
 		Assert.assertTrue(isMakePresent(), "Make field is not displayed");
 		make= xlLib.getCelllData("Automobile", 1, 0);
 		enterMake(make);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		
 		Assert.assertTrue(isEnginePerformancePresent(), "Engine Performance field is not displayed");
 		ep= xlLib.getCelllData("Automobile", 1, 1);
 		enterEnginePerformance(ep);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		
 		Assert.assertTrue(isDateOfManufacturePresent(),"Date Of Manufacture field is not displayed");
 		dom= xlLib.getCelllData("Automobile", 1, 2);
@@ -141,32 +141,32 @@ public class EnterVehicleData extends Driver {
 		Assert.assertTrue(isNumberOfSeats(), "Number Of Seats field is not displayed");
 		nos= xlLib.getCelllData("Automobile", 1, 3);
 		enterNumberOfSeats(nos);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		
 		Assert.assertTrue(isFuel(), "Fuel field is not displayed");
 		fuel= xlLib.getCelllData("Automobile", 1, 4);
 		enterFuel(fuel);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isListPrice(), "List Price field is not displayed");
 		lpr= xlLib.getCelllData("Automobile", 1, 5);
 		enterListPrice(lpr);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isLicensePlateNumber(),"License PlateNumber field is not displayed");
 		lpn= xlLib.getCelllData("Automobile", 1, 6);
 		enterLicensePlateNumber(lpn);
 
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		Assert.assertTrue(isAnnualMileage(), "Annual Mileage field is not displayed");
 		am= xlLib.getCelllData("Automobile", 1, 7);
 		enterAnnualMileage(am);
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 
 		Assert.assertTrue(isNextEnterInsurantData(), "Next Button is not displayed");
 		enterNextEnterInsurantData();
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		
 		
 	}
