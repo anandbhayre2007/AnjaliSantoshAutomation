@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test - Home(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testScripts.Camper.TC_Camper_Validation">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="navigate"/>
+          <include name="oneTimeSetUp"/>
+          <include name="tearDown"/>
+          <include name="testCamperPage"/>
+          <include name="oneTimeTearDown"/>
+        </methods>
+      </class> <!-- testScripts.Camper.TC_Camper_Validation -->
+    </classes>
+  </test> <!-- Test - Home(failed) -->
+</suite> <!-- Failed suite [Suite] -->
